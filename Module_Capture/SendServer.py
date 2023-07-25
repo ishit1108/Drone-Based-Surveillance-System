@@ -4,7 +4,7 @@ import time
 from pymongo.server_api import ServerApi
 
 def sendimg(imgpath, timestamp,gpsNS,gpsEW):
-    cluster = pymongo.MongoClient("mongodb+srv://admin:drone123@cluster0.ln0stfj.mongodb.net/?retryWrites=true&w=majority",server_api=ServerApi('1'))
+    cluster = pymongo.MongoClient("",server_api=ServerApi('1'))
     db = cluster["Original_Cluster"]
     collection = db["Original_Database"]
     i = 0
