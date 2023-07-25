@@ -1,7 +1,7 @@
 import pymongo
 from pymongo import MongoClient
 def sendimg(imgpath,imgname,gpsloc1,gpsloc2):
-    cluster = pymongo.MongoClient("mongodb+srv://gurleen2113:parika13@cluster0.70n9crp.mongodb.net/?retryWrites=true&w=majority")
+    cluster = pymongo.MongoClient("")
     db = cluster["Server"]
     collection = db["Image"]
 
