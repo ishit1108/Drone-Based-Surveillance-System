@@ -5,7 +5,7 @@ from pymongo.server_api import ServerApi
 
 def sendImgLoop(ersgan_list,timestamp,ts,gpsNS,gpsEW):
     print('Send1')
-    cluster = pymongo.MongoClient("mongodb+srv://admin:drone123@cluster0.cy9fi03.mongodb.net/?retryWrites=true&w=majority")
+    cluster = pymongo.MongoClient("")
     print('Send2')
     db = cluster["ESRGAN_Cluster"]
     print('Send3')
@@ -41,7 +41,7 @@ def sendImgLoop(ersgan_list,timestamp,ts,gpsNS,gpsEW):
 
 
 if __name__ == '__main__':
-    uri = "mongodb+srv://admin:drone123@cluster0.cy9fi03.mongodb.net/?retryWrites=true&w=majority"
+    uri = ""
     # Create a new client and connect to the server
     client = pymongo.MongoClient(uri)
     try:
