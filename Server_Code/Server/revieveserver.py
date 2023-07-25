@@ -3,7 +3,7 @@ from PIL import Image
 from io import BytesIO
 
 def getdata(outputname,imgname):
-    cluster = pymongo.MongoClient("mongodb+srv://gurleen2113:parika13@cluster0.70n9crp.mongodb.net/?retryWrites=true&w=majority")
+    cluster = pymongo.MongoClient("")
     db = cluster["Server"]
     collection = db["Image"]
     attribute = "timestamp"
