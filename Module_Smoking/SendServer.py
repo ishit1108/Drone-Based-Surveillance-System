@@ -11,7 +11,7 @@ def sendImgModel2_Flagged(output_img_list,timestamp,ts,gpsNS,gpsEW,source):
 
 def sendImgModel1(output_img_list,timestamp,ts,gpsNS,gpsEW,source):
     print('Send1')
-    cluster = pymongo.MongoClient("mongodb+srv://admin:drone123@cluster0.u8iebia.mongodb.net/?retryWrites=true&w=majority")
+    cluster = pymongo.MongoClient("")
     print('Send2')
     db = cluster["Smoking_Cluster"]
     print('Send3')
@@ -52,7 +52,7 @@ def sendImgModel1(output_img_list,timestamp,ts,gpsNS,gpsEW,source):
 
 def sendImgModel2(output_img_list,timestamp,ts,gpsNS,gpsEW,source):
     print('Send1')
-    cluster = pymongo.MongoClient("mongodb+srv://admin:drone123@cluster0.u8iebia.mongodb.net/?retryWrites=true&w=majority")
+    cluster = pymongo.MongoClient("")
     print('Send2')
     db = cluster["Smoking_Cluster"]
     print('Send3')
@@ -88,7 +88,7 @@ def sendImgModel2(output_img_list,timestamp,ts,gpsNS,gpsEW,source):
 
 
 if __name__ == '__main__':
-    uri = "mongodb+srv://admin:drone123@cluster0.u8iebia.mongodb.net/?retryWrites=true&w=majority"
+    uri = ""
     # Create a new client and connect to the server
     client = pymongo.MongoClient(uri)
     try:
