@@ -9,7 +9,7 @@ import datetime
 def getOriginalImages():
     try:
         cluster = pymongo.MongoClient(
-            "mongodb+srv://admin:drone123@cluster0.ln0stfj.mongodb.net/?retryWrites=true&w=majority")
+            "")
         # cb = cluster.Original_Cluster
         # tt = cb.Original_Database.find()
         # tt = list(tt)
